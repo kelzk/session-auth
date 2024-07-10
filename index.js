@@ -42,7 +42,7 @@ app.post("/", (req, res) => {
         res.cookie("sessionId", sessionId, {
           httpOnly: true,
           secure: true,
-          sameSite: None,
+          sameSite: "none",
         });
       } else {
         res.status(401);
